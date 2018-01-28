@@ -6,6 +6,8 @@ import 'rxjs/add/operator/map';
 
 import { Target } from './target';
 import { Entry } from './entry';
+import { File } from './file';
+import { Folder } from './folder';
 
 @Injectable()
 export class EntryService {
@@ -19,9 +21,9 @@ export class EntryService {
         .map(response => response['list']['entries'].map(({ entry: { targetGuid, target: t } }) => {
           let target: Target;
           if (t['file']) {
-            target = new Target(t['file']['name']);
+            target = new File(t['file']['name']);
           } else if (t['folder']) {
-            target = new Target(t['folder']['name']);
+            target = new Folder(t['folder']['name']);
           }
           return new Entry(targetGuid, target);
         }));

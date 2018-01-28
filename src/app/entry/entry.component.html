@@ -1,6 +1,6 @@
-<mat-card>
+<mat-card tabindex="0">
   <mat-card-header>
-    <mat-icon mat-card-avatar>{{'insert_drive_file'}}</mat-icon>
+    <mat-icon mat-card-avatar>{{isFolder ? 'folder' : 'insert_drive_file'}}</mat-icon>
     <mat-card-title>{{entry.target.name}}</mat-card-title>
   </mat-card-header>
 </mat-card>

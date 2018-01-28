@@ -1,6 +1,9 @@
+@import '~sass/variables';
+
 :host {
-  padding: 10px;
+  padding: $padding;
   mat-card {
+    cursor: default;
     .mat-card-title {
       width: 250px;
       white-space: nowrap;
