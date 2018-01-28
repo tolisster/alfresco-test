@@ -1,4 +1,4 @@
 <h1>The user's favourite files and folders</h1>
 <div fxLayout="row" fxLayoutWrap>
-  <app-entry *ngFor="let entry of entries" [entry]="entry"></app-entry>
+  <app-entry *ngFor="let entry of entries; trackBy: trackByEntries" [entry]="entry"></app-entry>
 </div>

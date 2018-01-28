@@ -17,6 +17,8 @@ export class AppComponent implements OnInit {
     this.getEntries();
   }
 
+  trackByEntries(index: number, entry: Entry): string { return entry.targetGuid; }
+
   getEntries() {
     this.entryService.getEntries()
         .subscribe(entries => this.entries = entries);
