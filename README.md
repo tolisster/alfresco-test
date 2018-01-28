@@ -1,4 +1,6 @@
-# AlfrescoTest
+# Alfresco test
+
+An Angular app which lists the user's favourite files and folders as 'cards' using the Angular Material component.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
