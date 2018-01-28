@@ -7,10 +7,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppMaterialModule } from './material.module';
 import { AppComponent } from './app.component';
 import { EntryService } from './entry.service';
+import { EntryComponent } from './entry/entry.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,

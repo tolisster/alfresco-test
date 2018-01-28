@@ -1,8 +1,3 @@
 <div fxLayout="row" fxLayoutWrap>
-  <mat-card *ngFor="let entry of entries" fxFlexAlign="stretch">
-    <mat-card-header>
-      <mat-icon mat-card-avatar>insert_drive_file</mat-icon>
-      <mat-card-title>{{entry.target.name}}</mat-card-title>
-    </mat-card-header>
-  </mat-card>
+  <app-entry *ngFor="let entry of entries" [entry]="entry"></app-entry>
 </div>
